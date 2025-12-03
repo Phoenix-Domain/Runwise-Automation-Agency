@@ -1,1 +1,24 @@
 @import 'tailwindcss';
+
+@theme{
+    /* Custom color themes */
+    --color-brandColor: #002366;
+    --color-primaryColor: #055BFF;
+    --color-backgroundColor: #00040D;
+    --color-border-color: #334F85;
+    --color-textStrong: #CCD3E0;
+    --color-textWeak: #F6F6F6;
+    --color-sectionBg: rgba(8,17,34,60);
+
+    /* Custom font themes */
+    --font-headerFont: 'Oswald', sans-serif;
+    --font-bodyFont: 'Inter', sans-serif
+}
+
+@layer base{
+
+}
+
+@layer components{
+
+}
