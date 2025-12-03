@@ -1,6 +1,7 @@
 export interface ButtonProps{
     label: string;
-    type: 'button' | 'submit' | 'reset'
+    type: 'button' | 'submit' | 'reset';
+    destination: string;
 }
 
 export interface BadgeProps{
