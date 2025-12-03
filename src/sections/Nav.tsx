@@ -1,7 +1,7 @@
 function Nav(){
     return (
-        <nav>
-
+        <nav className='bg-sectionBg text-textStrong'>
+            
         </nav>
     )
 }
