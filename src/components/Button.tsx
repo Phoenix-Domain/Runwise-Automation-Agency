@@ -1,10 +1,12 @@
 import type { ButtonProps } from '../../types/Types'
 
-function Button({ label, type }: ButtonProps){
+function Button({ label, type, destination }: ButtonProps){
     return(
-        <button type={type} className=''>
-            {label}
-        </button>
+        <a href={destination}>
+            <button type={type} className='primaryBtn sub-text'>
+                {label}
+            </button>
+        </a>
     )
 }
 
