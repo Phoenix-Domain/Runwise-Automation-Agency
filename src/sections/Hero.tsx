@@ -1,3 +1,5 @@
+import Button from '../components/Button';
+
 function Hero(){
     return(
         <section>
@@ -5,6 +7,11 @@ function Hero(){
                 Powered by Automation
             </h1>
         
+            <Button 
+                destination='#'
+                type='button'
+                label='Get started'
+            />
         </section>
     )
 }
