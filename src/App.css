@@ -16,7 +16,24 @@
 }
 
 @layer base{
+    h1,h2,h3,h4{
+        @apply font-headerFont font-bold tracking-normal
+    }
+    h1{
+        @apply text-[61px] md:text-[69px] md:leading-[82px] leading-[68px]
+    }
 
+    h2{
+        @apply text-[49px] md:text-[55px] leading-14 md:leading-[68px]
+    }
+
+    h3{
+        @apply text-[39px] md:text-[44px] leading-14 md:leading-[68px]
+    }
+
+    h4{
+        @apply text-[31px] md:text-[35px] leading-[38px] md:leading-[45px]
+    }
 }
 
 @layer components{

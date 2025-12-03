@@ -1,6 +1,6 @@
 import type { CardProps } from '../../types/Types';
 
-function Card({ icon, title, content}: CardProps){
+function Card({ icon, title, content }: CardProps){
     return (
         <>
             <p>
@@ -8,7 +8,6 @@ function Card({ icon, title, content}: CardProps){
                 {title}
                 {content}
             </p>
-            
         </>
     )
 }
