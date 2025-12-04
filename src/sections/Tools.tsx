@@ -3,66 +3,66 @@ import Badge from '../components/Badge';
 function Tools(){
     const stack1 = [
         {
-            tool: 'N8N',
+            name: 'N8N',
             imgSrc: '/Tools_Logo/n8n-color.svg'
         },
         {
-            tool: 'OpenAI',
+            name: 'OpenAI',
             imgSrc: '/Tools_Logo/openai-svgrepo-com.svg'
         },
         {
-            tool: 'Gemini',
+            name: 'Gemini',
             imgSrc: '/Tools_Logo/Google_Gemini_icon_2025.svg'
         },
         {
-            tool: 'Claude',
+            name: 'Claude',
             imgSrc: '/Tools_Logo/Claude_AI_symbol.svg 1.svg'
         },
         {
-            tool: 'Google Sheets',
+            name: 'Google Sheets',
             imgSrc: '/Tools_Logo/Google_Sheets_Logo 1.svg'
         },
         {
-            tool: 'Google Drive',
+            name: 'Google Drive',
             imgSrc: '/Tools_Logo/google-drive 1.svg'
         },
         {
-            tool: 'Gmail',
+            name: 'Gmail',
             imgSrc: '/Tools_Logo/gmail 1.svg'
         }
     ]
 
     const stack2 = [
         {
-            tool: 'Google Maps',
+            name: 'Google Maps',
             imgSrc: '/Tools_Logo/google-maps-platform 1.svg'
         },
         {
-            tool: 'Slack',
+            name: 'Slack',
             imgSrc: '/Tools_Logo/slack 1.svg'
         },
         {
-            tool: 'Airtable',
+            name: 'Airtable',
             imgSrc: '/Tools_Logo/airtable 1.svg'
         },
         {
-            tool: 'Clickup',
+            name: 'Clickup',
             imgSrc: '/Tools_Logo/ClickUp_idfty-HNVU_0.svg'
         },
         {
-            tool: 'PostgresSQL',
+            name: 'PostgresSQL',
             imgSrc: '/Tools_Logo/postgresql 1.svg'
         },
         {
-            tool: 'Eleven Labs',
+            name: 'Eleven Labs',
             imgSrc: '/Tools_Logo/elevenlabs 1.svg'
         },
         {
-            tool: 'Excel',
+            name: 'Excel',
             imgSrc: '/Tools_Logo/excel 1.svg'
         },
         {
-            tool: 'Deepseek',
+            name: 'Deepseek',
             imgSrc: '/Tools_Logo/deepseek-color.svg'
         }
     ]
@@ -77,14 +77,45 @@ function Tools(){
             </h3>
 
             <section>
-                <div>
-
+                <div className='flex justify-between gap-[]'>
+                    {
+                        stack1.map(tool => (
+                            <div className='flex flex-col'>
+                                <img
+                                    src={tool.imgSrc}
+                                    alt={`${tool.name} Logo`}
+                                    className='w-24'
+                                />
+                                <p>
+                                    {tool.name}
+                                </p>
+                            </div>
+                        ))
+                    }
                 </div>
 
-                <div>
-
+                <div className='flex justify-between gap-[]'>
+                    {
+                        stack2.map(tool => (
+                            <div className='flex flex-col'>
+                                <img
+                                    src={tool.imgSrc}
+                                    alt={`${tool.name} Logo`}
+                                    className='w-24'
+                                />
+                                <p>
+                                    {tool.name}
+                                </p>
+                            </div>
+                        ))
+                    }
                 </div>
             </section>
+
+            <h4 className='text-center'>
+                If you use it, <br />
+                We can connect it.
+            </h4>
         </section>
     )
 }
