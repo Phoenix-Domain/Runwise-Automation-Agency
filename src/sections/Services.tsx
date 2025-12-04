@@ -1,3 +1,5 @@
+import Badge from '../components/Badge';
+
 function Services(){
     return(
         <section>
