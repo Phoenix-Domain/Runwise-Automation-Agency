@@ -5,7 +5,7 @@
     --color-brandColor: #002366;
     --color-primaryColor: #055BFF;
     --color-backgroundColor: #00040D;
-    --color-border-color: #334F85;
+    --color-borderColor: #334F85;
     --color-textWeak: #A3A8B2;
     --color-textStrong: #F6F6F6;
     --color-sectionBg: rgba(8,17,34,60);
@@ -37,6 +37,15 @@
 
     p{
         @apply font-bodyFont text-[16px] md:text-[18px] leading-[22px] md:leading-[26px] tracking-normal
+    }
+
+    input,textarea{
+        @apply bg-[rgba(0,35,102,0.4)] px-2 py-4 rounded-md focus:bg-textStrong focus:text-backgroundColor 
+        focus:border-2 focus:border-borderColor outline-0 hover:border-2 hover:border-borderColor
+    }
+
+    label{
+        @apply flex flex-col gap-2
     }
 }
 

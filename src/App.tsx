@@ -8,6 +8,7 @@ import Tools from './sections/Tools';
 import WhyUs from './sections/WhyUs';
 import CTA from './sections/CTA';
 import FAQ from './sections/FAQ';
+import Contact from './sections/Contact';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
      <WhyUs />
      <CTA />
      <FAQ />
+     <Contact />
   </main>
   )
 }
