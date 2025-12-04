@@ -1,3 +1,5 @@
+import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+
 export interface ButtonProps{
     label: string;
     type: 'button' | 'submit' | 'reset';
@@ -9,7 +11,7 @@ export interface BadgeProps{
 }
 
 export interface CardProps{
-    icon: string;
+    icon: IconDefinition;
     title: string;
     content: string;
 }
