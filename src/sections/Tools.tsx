@@ -1,7 +1,8 @@
 import Badge from '../components/Badge';
+import type { Tools } from '../../types/Types';
 
 function Tools(){
-    const stack1 = [
+    const stack1: Tools[] = [
         {
             name: 'N8N',
             imgSrc: '/Tools_Logo/n8n-color.svg'
@@ -32,7 +33,7 @@ function Tools(){
         }
     ]
 
-    const stack2 = [
+    const stack2: Tools[] = [
         {
             name: 'Google Maps',
             imgSrc: '/Tools_Logo/google-maps-platform 1.svg'

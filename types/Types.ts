@@ -22,3 +22,8 @@ export interface ProcessCardProps{
     title: string;
     steps: string[];
 }
+
+export interface Tools{
+    name: string;
+    imgSrc: string;
+}
