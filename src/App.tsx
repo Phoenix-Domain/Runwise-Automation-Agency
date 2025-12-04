@@ -4,17 +4,19 @@ import Hero from './sections/Hero'
 import Services from './sections/Services'
 import SpecializedServices from './sections/SpecializedServices'
 import Process from './sections/Process'
+import Tools from './sections/Tools'
 
 function App() {
 
   return (
-    <main className='flex flex-col gap-20 md:gap-40 mx-6 md:mx-[60px] lg:mx-[120px]'>
+  <main className='flex flex-col gap-20 md:gap-40 mx-6 md:mx-[60px] lg:mx-[120px]'>
      <Nav />
      <Hero />
      <Services />
      <SpecializedServices />
      <Process />
-    </main>
+     <Tools />
+  </main>
   )
 }
 
