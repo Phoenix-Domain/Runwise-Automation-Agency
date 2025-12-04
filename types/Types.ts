@@ -27,3 +27,9 @@ export interface ToolType{
     name: string;
     imgSrc: string;
 }
+
+export interface Question{
+    id: number;
+    question: string;
+    answer: string;
+}
