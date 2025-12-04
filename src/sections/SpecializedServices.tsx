@@ -37,7 +37,7 @@ function SpecializedServices(){
                 Our Speciality
             </h2>
 
-            <section className='flex flex-col md:flex-row gap-6'>
+            <section className='flex flex-col md:flex-row md:flex-wrap gap-6'>
                 {
                     specializedServices.map(service => (
                     <Card 
