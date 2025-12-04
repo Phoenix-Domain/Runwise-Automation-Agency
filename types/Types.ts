@@ -4,7 +4,7 @@ import type { IconType } from 'react-icons/lib';
 export interface ButtonProps{
     label: string;
     type: 'button' | 'submit' | 'reset';
-    destination: string;
+    destination?: string;
 }
 
 export interface BadgeProps{
