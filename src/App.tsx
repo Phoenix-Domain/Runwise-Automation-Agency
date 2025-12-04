@@ -1,10 +1,11 @@
-import './App.css'
-import Nav from './sections/Nav'
-import Hero from './sections/Hero'
-import Services from './sections/Services'
-import SpecializedServices from './sections/SpecializedServices'
-import Process from './sections/Process'
-import Tools from './sections/Tools'
+import './App.css';
+import Nav from './sections/Nav';
+import Hero from './sections/Hero';
+import Services from './sections/Services';
+import SpecializedServices from './sections/SpecializedServices';
+import Process from './sections/Process';
+import Tools from './sections/Tools';
+import WhyUs from './sections/WhyUs';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
      <SpecializedServices />
      <Process />
      <Tools />
+     <WhyUs />
   </main>
   )
 }
