@@ -48,7 +48,7 @@ function Process(){
                 label='How It Works'
             />
 
-            <section>
+            <section className='flex flex-col gap-20'>
                 {
                     processCards.map(processCard => (
                         <ProcessCard 
