@@ -10,7 +10,7 @@ function Tools(){
         },
         {
             name: 'OpenAI',
-            imgSrc: '/Tools_Logo/openai-svgrepo-com.svg'
+            imgSrc: '/Tools_Logo/openai.png'
         },
         {
             name: 'Gemini',
@@ -30,14 +30,14 @@ function Tools(){
         },
         {
             name: 'Gmail',
-            imgSrc: '/Tools_Logo/gmail 1.svg'
+            imgSrc: '/Tools_Logo/Gmail_icon_(2020).svg'
         }
     ]
 
     const stack2: ToolType[] = [
         {
             name: 'Google Maps',
-            imgSrc: '/Tools_Logo/google-maps-platform 1.svg'
+            imgSrc: '/Tools_Logo/Google_map.svg'
         },
         {
             name: 'Slack',
@@ -57,7 +57,7 @@ function Tools(){
         },
         {
             name: 'Eleven Labs',
-            imgSrc: '/Tools_Logo/elevenlabs 1.svg'
+            imgSrc: '/Tools_Logo/Eleven_labs.svg'
         },
         {
             name: 'Excel',
