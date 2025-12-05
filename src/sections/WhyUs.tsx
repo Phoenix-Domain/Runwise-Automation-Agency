@@ -22,7 +22,7 @@ function WhyUs(){
         },
     ]
     return(
-        <section className='pageSection'>
+        <section className='pageSection flex flex-col gap-10'>
             <Badge 
                 label='Why Us?'
             />
