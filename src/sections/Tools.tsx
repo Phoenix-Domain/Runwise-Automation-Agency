@@ -1,5 +1,6 @@
 import Badge from '../components/Badge';
 import type { ToolType } from '../../types/Types';
+import Marquee from 'react-fast-marquee';
 
 function Tools(){
     const stack1: ToolType[] = [
@@ -77,15 +78,15 @@ function Tools(){
                 Tools We Use
             </h3>
 
-            <section>
-                <div className='flex justify-between gap-[]'>
+            <section className="space-y-8">
+                <div className='flex justify-between gap-4  overflow-hidden'>
                     {
                         stack1.map(tool => (
                             <div className='flex flex-col'>
                                 <img
                                     src={tool.imgSrc}
                                     alt={`${tool.name} Logo`}
-                                    className='w-24'
+                                    className='w-24 h-24'
                                 />
                                 <p>
                                     {tool.name}
@@ -95,14 +96,14 @@ function Tools(){
                     }
                 </div>
 
-                <div className='flex justify-between gap-[]'>
+                <div className='flex justify-between gap-4 overflow-hidden'>
                     {
                         stack2.map(tool => (
                             <div className='flex flex-col'>
                                 <img
                                     src={tool.imgSrc}
                                     alt={`${tool.name} Logo`}
-                                    className='w-24'
+                                    className='w-24 h-24'
                                 />
                                 <p>
                                     {tool.name}
