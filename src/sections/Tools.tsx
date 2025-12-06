@@ -78,7 +78,7 @@ function Tools(){
                 Tools We Use
             </h3>
 
-            <section className="space-y-8">
+            <section className="space-y-0">
                 <Marquee
                 speed={30}
                 pauseOnHover
@@ -101,6 +101,7 @@ function Tools(){
                             </div>
                         ))
                     }
+                    
                 </Marquee>
 
                 <Marquee
@@ -108,11 +109,10 @@ function Tools(){
                 pauseOnHover
                 gradient={true}
                 gradientColor='rgba(8,17,34,60)'  gradientWidth={50}
-                direction='right'
                 >
                     {
                         stack2.map(tool => (
-                            <div className='flex flex-col items-center mx-6'>
+                            <div className='flex flex-col items-center mx-6 mt-8'>
                                 <img
                                     src={tool.imgSrc}
                                     alt={`${tool.name} Logo`}
