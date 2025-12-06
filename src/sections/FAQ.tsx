@@ -67,7 +67,7 @@ function FAQ() {
         {questions.map((question) => (
           <div
             key={question.id}
-            className='flex items-start border-b-2 bg-sectionBg rounded-t-md justify-between cursor-pointer hover:bg-gray-800 transition-colors'
+            className='flex items-start border-b-2 bg-sectionBg rounded-t-md hover:border hover:border-primaryColor justify-between cursor-pointer transition-all ease-in-out duration-300'
             onClick={() => toggleFaq(question.id)}
           >
             <div className="p-4 flex flex-col gap-4 flex-1">
