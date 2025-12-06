@@ -1,6 +1,10 @@
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import type { IconType } from 'react-icons/lib';
 
+export interface BackgroundCirclesProp{
+    position: string
+}
+
 export interface ButtonProps{
     label: string;
     type: 'button' | 'submit' | 'reset';
