@@ -15,49 +15,43 @@ import BackgroundCircles from './components/BackgroundCircles';
 function App() {
 
   return (
-  <div className="container">
-    <BackgroundCircles
-        position='top-20 right-10'
-    />
-    <BackgroundCircles
-        position='bottom-20 left-10'
-    />
-    <main className='flex flex-col gap-20 md:gap-40 container'>
+    <>
       <BackgroundCircles
-        position='top-20 right-10'
-    />
-    <BackgroundCircles
-        position='bottom-20 left-10'
-    />
-      <Nav />
+          position='top-20 right-10'
+      />
+      <BackgroundCircles
+          position='bottom-10 left-10'
+      />
+      <main className='flex flex-col gap-20 md:gap-40'>
+        <Nav />
 
-      <Hero />
+        <Hero />
 
-      <Services />
+        <Services />
 
-      <SpecializedServices />
+        <SpecializedServices />
 
-      <section className='bg-sectionBg w-screen'>
-        <Process />
-      </section>
+        <section className='bg-sectionBg w-screen'>
+          <Process />
+        </section>
 
-      <Tools />
+        <Tools />
 
-      <WhyUs />
+        <WhyUs />
 
-      <section className='bg-sectionBg w-screen'>
-        <CTA />
-      </section>
+        <section className='bg-sectionBg w-screen'>
+          <CTA />
+        </section>
 
-      <FAQ />
+        <FAQ />
 
-      <Contact />
-      
-      <section className='bg-[#0c121e] w-screen'>
-        <Footer />
-      </section>
-    </main>
-  </div>
+        <Contact />
+        
+        <section className='bg-[#0c121e] w-screen'>
+          <Footer />
+        </section>
+      </main>
+    </>
   )
 }
 

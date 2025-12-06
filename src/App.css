@@ -50,11 +50,8 @@
 }
 
 @layer components{
-    .container{
-        @apply relative h-screen overflow-y-scroll border w-screen
-    }
     .pageSection{
-        @apply mx-6 md:mx-[60px] lg:mx-[120px] relative
+        @apply mx-6 md:mx-[60px] lg:mx-[120px]
     }
     
     .sub-heading{
