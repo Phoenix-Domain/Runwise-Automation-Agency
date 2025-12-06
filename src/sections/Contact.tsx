@@ -29,7 +29,7 @@ function Contact(){
                         </p>
                         <input
                         type="text"
-                        placeholder="e.g. Victory Automation"
+                        placeholder="e.g. JohnDoe Logistics"
                         required
                         />
                     </label>
@@ -58,7 +58,7 @@ function Contact(){
                         
                         <input
                         type="text"
-                        placeholder="e.g. Operations Lead at TechFlow Ltd"
+                        placeholder="e.g. Operations Lead at JohnDoe Logistics Ltd"
                         required
                         />
                     </label>
