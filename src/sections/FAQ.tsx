@@ -65,9 +65,10 @@ function FAQ(){
             <article className='flex flex-col gap-4'>
                 {
                     questions.map((question,key) => (
-                        <div className='flex items-center border-b-2 bg-sectionBg rounded-t-md px-2 justify-between'>
+                        <div
+                        key={key}
+                        className='flex items-center border-b-2 bg-sectionBg rounded-t-md px-2 justify-between'>
                             <details
-                            key={key}
                             ref={detailDom}
                             className="p-4 flex flex-col gap-4"
                             >
