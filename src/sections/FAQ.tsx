@@ -1,16 +1,8 @@
 import { useState } from 'react';
 import { faPlus, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import type { BadgeProps } from '../../types/Types';
+import Badge from '../components/Badge';
 
-// Mock Badge component
-function Badge({ label }: BadgeProps) {
-  return (
-    <div className="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">
-      {label}
-    </div>
-  );
-}
 
 function FAQ() {
   const questions = [
@@ -75,15 +67,15 @@ function FAQ() {
         {questions.map((question) => (
           <div
             key={question.id}
-            className='flex items-start border-b-2 bg-gray-50 rounded-t-md justify-between cursor-pointer hover:bg-gray-100 transition-colors'
+            className='flex items-start border-b-2 bg-sectionBg rounded-t-md justify-between cursor-pointer hover:bg-gray-800 transition-colors'
             onClick={() => toggleFaq(question.id)}
           >
             <div className="p-4 flex flex-col gap-4 flex-1">
-              <div className="font-semibold text-gray-900">
+              <div className="font-semibold">
                 {`${question.id}. ${question.question}`}
               </div>
               {openId === question.id && (
-                <p className='text-gray-600'>
+                <p className='text-textWeak'>
                   {question.answer}
                 </p>
               )}
