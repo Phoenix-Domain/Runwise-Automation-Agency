@@ -9,7 +9,7 @@ function Card({ icon, title, content }: CardProps){
     const IconComponent = icon as React.ElementType;
 
     return (
-        <article className='flex flex-col p-6 gap-6 bg-[rgba(102,123,163,0.2)] rounded-xl w-fit mx-auto'>
+        <article className='flex flex-col p-4 sm:p-6 gap-4 sm:gap-6 bg-[rgba(102,123,163,0.2)] rounded-xl w-full sm:w-fit mx-auto'>
             <div className='flex flex-col gap-2'>
                 <div className='p-4 w-14 h-14 rounded-full bg-[rgba(0,35,102,0.4)] border border-primaryColor flex items-center'>
                     {
@@ -22,7 +22,7 @@ function Card({ icon, title, content }: CardProps){
                 </h4>
             </div>
 
-            <p className="sub-text max-w-[330px]">
+            <p className="sub-text max-w-full sm:max-w-[330px]">
                 {content}
             </p>
         </article>

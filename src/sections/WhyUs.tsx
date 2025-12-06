@@ -8,7 +8,7 @@ function WhyUs(){
         {
             icon: faChartLine,
             title: 'Results Over Tools',
-            content: 'We don’t just provide software—we deliver measurable outcomes. Every feature is designed to save time, boost productivity, and increase revenue.'
+            content: "We don't just provide software—we deliver measurable outcomes. Every feature is designed to save time, boost productivity, and increase revenue."
         },
         {
             icon: faPuzzlePiece,
@@ -31,7 +31,7 @@ function WhyUs(){
                 Why Choose Runwise
             </h3>
 
-            <section className='flex flex-col md:flex-row gap-6'>
+            <section className='flex flex-col md:flex-row gap-6 w-full max-w-7xl mx-auto'>
                 {
                     whyUs.map((service, key) => (
                     <Card 

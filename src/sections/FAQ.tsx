@@ -63,7 +63,7 @@ function FAQ() {
     <section className='flex flex-col gap-10 p-8'>
       <Badge label='Frequently Asked Questions' />
       
-      <article className='flex flex-col gap-4'>
+      <article className='flex flex-col gap-4 w-full max-w-3xl mx-auto'>
         {questions.map((question) => (
           <div
             key={question.id}

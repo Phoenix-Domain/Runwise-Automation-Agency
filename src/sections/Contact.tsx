@@ -14,11 +14,11 @@ function Contact(){
                 </h3>
 
                 <p className='sub-text'>
-                    Send a message<br />and we’ll get back to you shortly.
+                    Send a message<br />and we'll get back to you shortly.
                 </p>
             </article>
 
-            <form action="" method='POST'  className='flex flex-col gap-6'>
+            <form action="" method='POST'  className='flex flex-col gap-6 w-full max-w-2xl mx-auto'>
                 <div className='flex flex-col *:flex *:flex-col gap-4'>
                     <label>
                         <p className='font-bold flex gap-1'>
@@ -94,10 +94,12 @@ function Contact(){
                     </label>
                 </div>
 
-                <Button 
-                    type='submit'
-                    label='Send message'
-                />
+                <div className='w-full flex justify-center'>
+                    <Button 
+                        type='submit'
+                        label='Send message'
+                    />
+                </div>
             </form>
         </section>
     )
